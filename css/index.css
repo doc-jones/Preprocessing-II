@@ -208,6 +208,10 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .nav-content {
+  width: 100%;
+  height: auto;
+}
 .home .wecome-text {
   margin-top: 20px;
 }
@@ -216,11 +220,11 @@ img {
   padding: 20px 5%;
 }
 .home .content-section {
-  width: 800px;
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px 5%;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -234,6 +238,7 @@ img {
   border-radius: 10px;
 }
 .home .inverse-content {
+  width: 800px;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -253,6 +258,7 @@ img {
   border-radius: 10px;
 }
 .home .content-pick {
+  border: 1px solid cadetblue;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
@@ -261,4 +267,35 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.home .content-pick .destination .btn .book-flight-btn {
+  display: block;
+  background-color: rgba(32, 126, 129, 0.185);
+  color: white;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+@media (max-width: 515px) {
+  .home .content-pick .destination .btn .book-flight-btn {
+    width: 90%;
+    height: 50px;
+    font-size: 2.5rem;
+    background-color: red;
+  }
+}
+@media (max-width: 400px) {
+  .home .content-pick .destination .btn .book-flight-btn {
+    background: green;
+    color: white;
+  }
 }
