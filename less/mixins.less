@@ -4,17 +4,11 @@
 
 /* parametric mixin to create buttons */
 
-.custom-layout(@justify-content: center; @align-items: center; @flex-direction:row) {
-    display: flex;
-    justify-content: @justify-content;
-    align-items: @align-items;
-    flex-direction: @flex-direction;
-  }
 
-  .custom-button(@width; @font-color) {
+  .custom-button(@width: 200px; @font-color: white; @bg-color: #0b6b6e;) {
   
     display: block;
-    background-color: rgba(32, 126, 129, 0.185);
+    background-color: @bg-color;
     color: @font-color;
     margin: 0 10px 20px;
     cursor: pointer;

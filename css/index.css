@@ -258,7 +258,6 @@ img {
   border-radius: 10px;
 }
 .home .content-pick {
-  border: 1px solid cadetblue;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
@@ -269,33 +268,29 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: row;
-}
-.home .content-pick .destination .btn .book-flight-btn {
   display: block;
-  background-color: rgba(32, 126, 129, 0.185);
+  background-color: #0b6b6e;
   color: white;
   margin: 0 10px 20px;
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   height: 45px;
   font-size: 2rem;
   border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 @media (max-width: 515px) {
-  .home .content-pick .destination .btn .book-flight-btn {
+  .home .content-pick .destination .btn {
     width: 90%;
     height: 50px;
     font-size: 2.5rem;
-    background-color: red;
+    background-color: #0b6b6e;
   }
 }
 @media (max-width: 400px) {
-  .home .content-pick .destination .btn .book-flight-btn {
-    background: green;
+  .home .content-pick .destination .btn {
+    background: #0b6b6e;
     color: white;
   }
 }

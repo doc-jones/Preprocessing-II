@@ -64,7 +64,6 @@
   }
 
   .content-pick {
-    border: 1px solid cadetblue;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -73,25 +72,23 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    .btn{
-        .custom-layout(@align-items: flex-end);
-        .book-flight-btn {
-          .custom-button(150px, white);
+      .btn {
+          .custom-button(200px, white);
+          padding: 10px;
+          text-align: center;
     
          @media (max-width: 515px) {
             width: 90%;
             height: 50px;
             font-size: 2.5rem;
-            background-color: red;
+            background-color: #0b6b6e;
         }
     
           @media (max-width: 400px) {
-            background: green;
+            background:#0b6b6e;
             color: white;
           }
-        } // book flight button
       }
-    }
-
+    }  // end of btn
   }
 }// home
