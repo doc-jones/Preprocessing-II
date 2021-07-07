@@ -1,1 +1,19 @@
 // Mixins in here
+@phone = ~"(min-width: 500px)";
+
+
+/* parametric mixin to create buttons */
+
+
+  .custom-button(@width: 200px; @font-color: white; @bg-color: #0b6b6e;) {
+  
+    display: block;
+    background-color: @bg-color;
+    color: @font-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
